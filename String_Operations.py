@@ -14,3 +14,8 @@ numbers=q[4]
 special=q[5]
 print("We have numbers {} and special characters {}".format(numbers, special))
 print("It\'s all\n right\t   backspace\bfor \\me")
+
+string="PYTHON"
+for char in string:
+    print(chr(ord(char)-1))
+    print(ord(char))
