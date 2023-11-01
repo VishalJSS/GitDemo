@@ -1,8 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import time
-
 from selenium.webdriver.support.select import Select
+
 product_names=[]
 product_prices=[]
 product_ratings=[]
@@ -53,4 +52,6 @@ driver.quit()
 
 for name, price, rate in zip(product_names, product_prices, product_ratings):
     print(name, price, rate)
+
+
 

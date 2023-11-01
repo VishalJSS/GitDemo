@@ -12,29 +12,34 @@ f = open("demofile.txt", "r")    #Displays all content
 print(f.read())
 f.close()
 
+"""
+Hello! Welcome to demofile.txt
+This file is for testing purposes.
+Good Luck!
+"""
 print("\n")
 
 f = open("demofile.txt", "r")
-print(f.readline())                #Reads First line
+print(f.readline())                #Reads First line  Hello! Welcome to demofile.txt
 f.close()
 
 f = open("demofile.txt", "r")
-print(f.readlines())                #Returns as list
+print(f.readlines())                #Returns as list  ['Hello! Welcome to demofile.txt\n', 'This file is for testing purposes.\n', 'Good Luck!']
 f.close()
 
 f = open("demofile.txt", "r")
-print(f.read(10))                 #Reads first 10 index characters
+print(f.read(10))                 #Reads first 10 index characters   Hello! Wel
 f.close()
 
 f = open("demofile.txt", "r")
 for x in f:
-  print(x)                    #Loops through each line to display
+  print(x)                    #Loops through each line to display  Hello! Welcome to demofile.txt   This file is for testing purposes.    Good Luck!
 f.close()
 
 f = open("demofile.txt", "r")
 f.seek(12)                    #Setting index position
-print(f.tell())               #Prints current position
-print(f.readline())
+print(f.tell())               #Prints current position  12
+print(f.readline())           #me to demofile.txt
 f.close()
 
 f = open("demofile2.txt", "a")
@@ -45,12 +50,22 @@ f = open("demofile2.txt", "r")
 print(f.read())
 f.close()
 
+"""
+See you soon!
+Over and out.Now the file has more content!
+"""
+
 f = open("demofile2.txt", "w")
 f.writelines(["See you soon!\n", "Over and out."])
 f.close()
 
+
 f = open("demofile2.txt", "r")
 print(f.read())
+"""
+See you soon!
+Over and out.
+"""
 print(f.seekable())       #True
 f.close()
 
@@ -63,11 +78,16 @@ print(f.writable())         #True
 f.close()
 
 f = open("demofile3.txt", "r")
-print(f.fileno())     #Returns a number that represents the stream, from the operating system's perspective
+print(f.fileno())     #Returns a number that represents the stream, from the operating system's perspective  3
 print(f.isatty())     #returns True if the file stream is interactive   #False
 print(f.readable())   #Returns true if reable if not false    #True
 print(f.read())
 f.close()
+
+"""
+Woops! I have deleted the content!
+Writing in new line
+"""
 
 #import os
 #os.remove("demofile.txt")

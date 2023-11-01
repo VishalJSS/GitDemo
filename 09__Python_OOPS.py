@@ -24,6 +24,13 @@ for animal in (cat1, dog1):
     animal.make_sound()
     animal.info()
 
+"""
+Meow
+I am a cat. My name is Kitty. I am 2.5 years old.
+Bark
+I am a dog. My name is Fluffy. I am 4 years old.
+"""
+
 print("\n")
 #Inheritance Class Polymorphism
 
@@ -55,6 +62,17 @@ for x in (car1, boat1, plane1):
   print(x.model)
   x.move()
 
+"""
+Ford
+Mustang
+Move!
+Ibiza
+Touring 20
+Sail!
+Boeing
+747
+Fly!
+"""
 print("\n")
 
 #Python Multiple Inheritance
@@ -85,6 +103,14 @@ emp.person_info('Jessa', 28)
 emp.company_info('Google', 'Atlanta')
 emp.Employee_info(12000, 'Machine Learning')
 
+"""
+Inside Person class
+Name: Jessa Age: 28
+Inside Company class
+Name: Google location: Atlanta
+Inside Employee class
+Salary: 12000 Skill: Machine Learning
+"""
 print("\n")
 
 #Multilevel Inheritance
@@ -111,7 +137,11 @@ s_car = SportsCar()
 s_car.Vehicle_info()
 s_car.car_info()
 s_car.sports_car_info()
-
+"""
+Inside Vehicle class
+Inside Car class
+Inside SportsCar class
+"""
 #Hierarichal Inheritance
 
 class Vehicle:
@@ -134,6 +164,12 @@ obj2 = Truck()
 obj2.info()
 obj2.truck_info('Ford')
 
+"""
+This is Vehicle
+Car name is: BMW
+This is Vehicle
+Truck name is: Ford
+"""
 #Hybrid Inheritance
 
 class Vehicle:
@@ -160,6 +196,11 @@ s_car.vehicle_info()
 s_car.car_info()
 s_car.sports_car_info()
 
+"""
+Inside Vehicle class
+Inside Car class
+Inside SportsCar class
+"""
 #Method Overriding
 
 class Vehicle:
@@ -173,7 +214,7 @@ class Car(Vehicle):
 
 # Creating object of Car class
 car = Car()
-car.max_speed()
+car.max_speed()         #max speed is 200 Km/Hour
 
 
 #Encapsulation Public Method
@@ -202,6 +243,11 @@ emp = Employee('Jessa', 8000, 'NLP')
 emp.show()
 emp.work()
 
+"""
+Name:  Jessa Salary: 8000
+Jessa is working on NLP
+"""
+
 #Private Member (Accessible only within function)
 
 class Employee:
@@ -221,7 +267,7 @@ class Employee:
 emp = Employee('Jessa', 10000)
 
 # accessing private data members
-emp.show()
+emp.show()          #Name:  Jessa Salary: 10000
 
 #Protected Member  accessible within the class and also available to its sub-classes.
 
@@ -247,6 +293,12 @@ c.show()
 
 # Direct access protected data member
 print('Project:', c._project)
+
+"""
+Employee name : Jessa
+Working on project : NLP
+Project: NLP
+"""
 
 #Getters and Setters
 
@@ -274,3 +326,6 @@ stud.set_age(16)
 
 # retrieving age using getter
 print('Name:', stud.name, stud.get_age())
+
+#Name: Jessa 14
+#Name: Jessa 16
