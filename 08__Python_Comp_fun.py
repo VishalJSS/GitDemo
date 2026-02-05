@@ -46,6 +46,12 @@ print("\n")
 for x in range(2, 30, 3):
   print(x)      # 2 5 8 11 14 17 20 23 26 29
 
+if a > b: larger_number = a
+else: larger_number = b
+
+# Print the result
+print("The larger number is:", larger_number)
+
 def my_function():
     print("Hello function")     #Hello function
 my_function()

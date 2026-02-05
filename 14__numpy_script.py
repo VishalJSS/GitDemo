@@ -76,6 +76,10 @@ print(arr[0])               #1
 print("\nSection 5")
 #Adding
 print(arr[2]+arr[3])           #3+4 = 7
+add1=np.array([1,2,3])
+add2=np.array([4,5,6])
+addition=add1+add2
+print("Addition Array", addition)
 
 #Slicing
 print(arr[1:5])     #[2 3 4 5]
@@ -124,6 +128,7 @@ print(arr9.dtype)  #|S1
 arr10 = np.array([1, 2, 3, 4], dtype='i4')
 print(arr10)
 print(arr10.dtype)
+print(arr10.itemsize)
 
 #A non integer string like 'a' can not be converted to integer (will raise an error):
 #arr = np.array(['a', '2', '3'], dtype='i')
@@ -443,9 +448,21 @@ arr38 = np.random.randint(10,100, size=(2,3))
 print(arr38)
 
 #datatype
-arr39 = np.array([1,2,3.1,4,5])   #Even 1 value is float, it will consider all as float value
+arr39 = np.array([1,2,3.1,4,5,6])   #Even 1 value is float, it will consider all as float value
 print(arr39)    #[1.  2.  3.1 4.  5. ]
 listvalue = [1, 'string', 5.6, 1000]
 arr40 = np.array(listvalue)     #all values in list will be considered string
 print(arr40)  #['1' 'string' '5.6' '1000']
-                 
+
+#one dimension conversion
+arr41 = np.array([[1,2,3],[4,5,6]])
+arr_ravel =  arr41.ravel()
+print(arr_ravel)
+print(arr41)      
+arr41[0][0]=100     #Getting overwritten in ravel
+print(arr_ravel)
+print(arr41)   
+arr_flatten = arr41.flatten()
+print(arr_flatten)
+arr41[0][0]=1       #Not getting overwritten in flatten (It makes copy of original array)
+print(arr_flatten)

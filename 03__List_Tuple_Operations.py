@@ -1,5 +1,6 @@
 thislist=['Apple','Banana','Cherry','Apple', 123, 4.0]
 
+print("\nsection 1")
 print(len(thislist))        #6
 print(type(thislist))       #<class 'list'>
 
@@ -16,7 +17,7 @@ print(thislist[-5:-2])  #['Banana', 'Cherry', 'Apple']
 if "Apple" in thislist:
     print("Apple is present in list")       #Apple is present in list
 
-
+print("\nsection 2")
 
 thislist=['Apple','Banana','Cherry','Apple', 123, 4.0]
 
@@ -26,6 +27,7 @@ thislist[4:6]=["Durian","Elaichi"]    #Replace
 print(thislist)                #['Apple', 'Blueberry', 'Cherry', 'Apple', 'Durian', 'Elaichi']
 thislist.insert(3, "CitrusFruit")
 
+print("\nsection 3")
 thislist.append("Figs")
 print(thislist)     #['Apple', 'Blueberry', 'Cherry', 'CitrusFruit', 'Apple', 'Durian', 'Elaichi', 'Figs']
 anotherlist=["Grape","Honey", "ItaPalm"]
@@ -36,6 +38,7 @@ anothertuple=("Jackfruit", "Kiwis", "Apple")
 thislist.extend(anothertuple)
 print(thislist)  #['Apple', 'Blueberry', 'Cherry', 'CitrusFruit', 'Apple', 'Durian', 'Elaichi', 'Figs', 'Grape', 'Honey', 'ItaPalm', 'Jackfruit', 'Kiwis', 'Apple']
 
+print("\nsection 4")
 thislist.remove("CitrusFruit")
 thislist.remove("Apple")     #First Apple from list
 print(thislist)         #['Blueberry', 'Cherry', 'Apple', 'Durian', 'Elaichi', 'Figs', 'Grape', 'Honey', 'ItaPalm', 'Jackfruit', 'Kiwis', 'Apple']
@@ -45,12 +48,14 @@ print(thislist)         #['Blueberry', 'Cherry', 'Apple', 'Durian', 'Elaichi', '
 thislist.pop(2)    #Apple in index 2
 print(thislist)     #['Blueberry', 'Cherry', 'Durian', 'Elaichi', 'Figs', 'Grape', 'Honey', 'ItaPalm', 'Jackfruit', 'Kiwis']
 
+print("\nsection 5")
 del thislist[6]    #Deleting Honey
 print(thislist)     #['Blueberry', 'Cherry', 'Durian', 'Elaichi', 'Figs', 'Grape', 'ItaPalm', 'Jackfruit', 'Kiwis']
 
 thislist.clear()
 print(thislist)     #[]
 
+print("\nsection 6")
 newlist=["A","E","I","O","U"]
 print(newlist)      #['A', 'E', 'I', 'O', 'U']
 #del newlist
@@ -70,6 +75,7 @@ index:  3 O
 index:  4 U
 """
 
+print("\nsection 7")
 j=0
 while j < len(newlist):
     print(newlist[j])       #A E I O U
@@ -83,6 +89,8 @@ for x in lis:
     newlis.append(x)
 print(newlis)       #['Durian', 'Elaichi', 'Grape', 'ItaPalm', 'Jackfruit']
 
+print("\nsection 8")
+
 newlis=[x for x in lis if "a" in x]
 print(newlis)           #['Durian', 'Elaichi', 'Grape', 'ItaPalm', 'Jackfruit']
 nlis=[x for x in newlis if x != "Grape"]
@@ -92,6 +100,8 @@ alist = [x for x in range(10) if x < 5]
 print(alist)            #[0, 1, 2, 3, 4]
 blist = [x.upper() for x in nlis]
 print(blist)            #['DURIAN', 'ELAICHI', 'ITAPALM', 'JACKFRUIT']
+
+print("\nsection 9")
 
 clist = ["orange", "mango", "kiwi", "pineapple", "banana"]
 clist.sort()
@@ -106,6 +116,7 @@ print("THis is copied list", cpylist)       #THis is copied list ['banana', 'kiw
 dlist=list(lis)
 print("Another copy method", dlist)     #Another copy method ['Apple', 'Blueberry', 'Cherry', 'Durian', 'Elaichi', 'Figs', 'Grape', 'Honey', 'ItaPalm', 'Jackfruit', 'Kiwis']
 
+print("\nsection 10")
 elist=clist+dlist
 print(elist)        #['banana', 'kiwi', 'mango', 'orange', 'pineapple', 'Apple', 'Blueberry', 'Cherry', 'Durian', 'Elaichi', 'Figs', 'Grape', 'Honey', 'ItaPalm', 'Jackfruit', 'Kiwis']
 
@@ -119,6 +130,8 @@ print(num)      #2
 ind=flist.index("b")
 print(ind)      #1
 
+print("\nsection 11")
+
 x = ("apple", "banana", "cherry")
 y = list(x)
 y[1] = "kiwi"
@@ -126,6 +139,7 @@ x = tuple(y)
 
 print(x)        #('apple', 'kiwi', 'cherry')
 
+print("\nsection 12")
 thistuple = ("apple", "banana", "cherry")
 y = ("orange",)
 thistuple += y
@@ -134,6 +148,7 @@ print(thistuple)    #('apple', 'banana', 'cherry', 'orange')
 
 fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
 
+print("\nsection 13")
 (green, yellow, *red) = fruits
 
 print(green)        #apple

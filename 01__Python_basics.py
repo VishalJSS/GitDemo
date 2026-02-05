@@ -2,8 +2,22 @@
 a=1
 b="One"
 c=2.0
+
+print("\nsection 1")
 print(type(a), type(b), type(c))    #<class 'int'> <class 'str'> <class 'float'>
 print("Hello World")                #Hello World
+print()
+print("This is for escape \n character")
+print("This is my name", end=" ")
+print("last string")
+print("This is for separation", sep="-")
+print("Programming","Essentials","in", sep="***", end="...")
+print("Python")
+print("1,00,000")
+print(100000)
+print(1_00_000)     #Other way to print numeric value
+
+print("\nsection 2")
 d,e,f="two","three","four"
 g=h=i=3
 print(d,e,f,g,h,i)                  #two three four 3 3 3
@@ -21,3 +35,11 @@ o="I am doing Good"
 print("Good" in o)                  #True
 if "Nothing" not in o:
     print("Nothing is not in {}".format(o))  #Nothing is not in I am doing Good
+
+#Keywords
+"""['False', 'None', 'True', 'and', 'as', 'assert', 
+'break', 'class', 'continue', 'def', 'del', 
+'elif', 'else', 'except', 'finally', 'for', 
+'from', 'global', 'if', 'import', 'in', 'is', 
+'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 
+'return', 'try', 'while', 'with', 'yield']"""
